@@ -1,0 +1,155 @@
+{
+  "common": {
+    "signIn": "登录",
+    "signOut": "退出登录",
+    "loading": "加载中…",
+    "on": "开",
+    "off": "关",
+    "close": "关闭",
+    "save": "保存",
+    "cancel": "取消",
+    "edit": "编辑",
+    "delete": "删除",
+    "userId": "用户 ID"
+  },
+  "language": {
+    "label": "语言",
+    "triggerLabel": "语言：{{language}}",
+    "followSystem": "跟随系统",
+    "followSystemWithLanguage": "跟随系统（{{language}}）",
+    "enUS": "English",
+    "zhCN": "中文"
+  },
+  "errors": {
+    "notFound": {
+      "code": "404",
+      "title": "页面未找到",
+      "description": "这个工作室界面还不存在。",
+      "action": "返回工作区"
+    },
+    "generic": {
+      "title": "出现了一点问题",
+      "description": "刷新工作室后再试一次。",
+      "action": "重试"
+    }
+  },
+  "spatial": {
+    "locale": {
+      "systemShort": "自动"
+    },
+    "status": {
+      "noHand": "No hand",
+      "handDetected": "Hand detected",
+      "pinched": "Pinched fingers - Draw",
+      "moving": "Moving"
+    },
+    "statusDetail": {
+      "noHand": "把一只手放入画面",
+      "handDetected": "可以开始捏合或握拳",
+      "pinched": "正在连续移动",
+      "moving": "正在重新移动图形"
+    },
+    "workspace": {
+      "title": "Spatial Canvas",
+      "version": "v1.0.0",
+      "badge": "Calm Creative Studio",
+      "description": "一个安静的虚拟空气创作空间。用现代手部追踪交互自然控制你的画布。",
+      "guideHeading": "当前手势协议",
+      "guideLabel": "引导",
+      "settingsHeading": "工作区设置",
+      "acoustic": "声音反馈",
+      "fidelity": "追踪精度",
+      "fidelityValue": "高（30fps）",
+      "local": "本地浏览器空间",
+      "calibrate": "校准画面",
+      "cameraLabel": "前置摄像头画面",
+      "openGuide": "打开引导说明",
+      "canvasLabel": "空间绘图画布覆盖层",
+      "calibrationMini": "追踪置信度 {{confidence}}%",
+      "shapeCount": "{{count}} 个图形",
+      "shapeCount_plural": "{{count}} 个图形",
+      "pickColor": "选择笔触颜色",
+      "cycle": "切换",
+      "settings": "设置",
+      "undo": "撤销",
+      "clear": "清空"
+    },
+    "steps": {
+      "pinch": { "title": "捏合并保持", "desc": "连续绘制厚实的墨迹轨迹" },
+      "release": { "title": "松开捏合", "desc": "放下墨迹并生成空间图形" },
+      "fist": { "title": "握拳并滑动", "desc": "抓住并重新摆放静态图形" }
+    },
+    "camera": {
+      "idle": { "title": "启动摄像头画布", "desc": "授权前置摄像头后，镜像你的手部并开始空中绘画。" },
+      "loading": { "title": "正在准备手部追踪", "desc": "正在加载摄像头和浏览器手部关键点模型。" },
+      "denied": { "title": "摄像头权限被阻止", "desc": "请在浏览器中允许摄像头访问，然后回到这里启动工作室。" },
+      "unsupported": { "title": "当前不支持摄像头", "desc": "这个浏览器没有开放摄像头能力。请尝试现代移动端或桌面浏览器。" },
+      "error": { "title": "摄像头无法启动", "desc": "请关闭其他正在使用摄像头的应用后再试。" },
+      "ready": { "title": "摄像头已就绪", "desc": "你的手势追踪画布正在运行。" },
+      "start": "启动摄像头",
+      "loadingAction": "启动中…"
+    },
+    "calibration": {
+      "guidance": {
+        "noHand": "画面中还没有检测到手。",
+        "ready": "距离看起来很合适。",
+        "close": "把手稍微往后移一点。",
+        "far": "把手靠近摄像头一点。"
+      }
+    },
+    "onboarding": {
+      "badge": "Spatial Gesture Canvas",
+      "close": "关闭引导",
+      "title": "欢迎来到你的安静创作工作室。",
+      "description": "使用前置摄像头或普通电脑摄像头，在 2D 空间坐标中自然地绘画和移动对象。不需要手套、控制器或额外设置。",
+      "how": "如何交互",
+      "draw": { "title": "绘制笔触", "desc": "将拇指和食指捏合在一起，绘制细腻的空间线条。" },
+      "grab": { "title": "抓住并拖动", "desc": "在静态笔触旁握拳，把它拾起并移动到别处。" },
+      "release": { "title": "放下图形", "desc": "完全张开手掌，把图形稳稳放在画布上。" },
+      "noAccount": "无需账号设置。",
+      "enter": "进入工作室空间"
+    },
+    "settings": {
+      "back": "返回画布",
+      "title": "工作室设置",
+      "smoothingGroup": "张力与平滑",
+      "smoothingDesc": "通过加权指数移动平均过滤减少手部抖动。",
+      "smoothingLabel": "关键点平滑",
+      "smoothingValue": "{{value}}%（高）",
+      "soundGroup": "声音反馈面板",
+      "soundLabel": "触感合成声音",
+      "soundDesc": "绘制路径时播放轻柔的陶土摩擦声。",
+      "deadzoneGroup": "手势死区",
+      "deadzoneDesc": "摄像头视图中的捏合检测接近范围。",
+      "pinchLabel": "捏合距离灵敏度",
+      "pinchValue": "{{value}}px",
+      "grabGroup": "对象抓取半径",
+      "grabDesc": "握拳需要离现有图形多近，才能移动它。",
+      "grabLabel": "握拳抓取范围",
+      "grabValue": "{{value}}px",
+      "footer": "Spatial Gesture Canvas — 使用本地前端机器学习模型构建。"
+    },
+    "calibrationScreen": {
+      "back": "返回画布",
+      "title": "摄像头校准",
+      "canvasLabel": "摄像头校准画布覆盖层",
+      "guide": "将手对准中心目标",
+      "properties": "校准属性",
+      "gain": "对比度增益",
+      "light": "环境光",
+      "lightValue": {
+        "low": "偏暗",
+        "balanced": "已优化",
+        "bright": "偏亮"
+      },
+      "distance": "手部距离",
+      "distanceValue": {
+        "close": "过近",
+        "ideal": "理想",
+        "far": "过远"
+      },
+      "confidence": "置信度",
+      "confirm": "确认校准设置"
+    }
+  }
+}

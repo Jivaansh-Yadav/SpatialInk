@@ -1,0 +1,142 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-primary: #C96A4B;
+  --color-secondary: #9CB48A;
+  --color-accent: #F5F1E8;
+  --color-border: #EAE4D7;
+  --color-text-primary: #2E2B27;
+  --color-text-secondary: #5E594F;
+  --color-text-muted: #8A8172;
+  --color-states-success: #9CB48A;
+  --color-states-warning: #D4A373;
+  --color-states-error: #C96A4B;
+  --color-studio-surface: #fffaf1;
+  --color-studio-panel: #F1EBE0;
+  --color-studio-raised: #EFE9DF;
+  --color-studio-soft: #E5DDD0;
+  --color-studio-frame: #EAE3D4;
+  --color-studio-line: #E1D9CC;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-body: var(--font-body);
+  --font-heading: var(--font-heading);
+  --font-sans: var(--font-body);
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-pill: 9999px;
+
+  --shadow-token-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-token-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-token-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+:root {
+  --background: #F5F1E8;
+  --foreground: #2E2B27;
+  --card: #fffaf1;
+  --card-foreground: #2E2B27;
+  --popover: #fffaf1;
+  --popover-foreground: #2E2B27;
+  --muted: #F1E8D9;
+  --muted-foreground: #8A8172;
+  --accent-foreground: #2E2B27;
+  --destructive: #C96A4B;
+  --border: #EAE4D7;
+  --input: #EAE4D7;
+  --ring: #C96A4B;
+}
+
+.dark {
+  --background: #2E2B27;
+  --foreground: #F5F1E8;
+  --card: #3A342D;
+  --card-foreground: #F5F1E8;
+  --popover: #3A342D;
+  --popover-foreground: #F5F1E8;
+  --muted: #4A433A;
+  --muted-foreground: #D9CCB9;
+  --accent-foreground: #F5F1E8;
+  --destructive: #C96A4B;
+  --border: #5E594F;
+  --input: #5E594F;
+  --ring: #D4A373;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    min-height: 100%;
+    background: #F5F1E8;
+    -webkit-text-size-adjust: 100%;
+    font-family: var(--font-body), sans-serif;
+  }
+
+  body {
+    min-height: 100svh;
+    margin: 0;
+    background: #F5F1E8;
+    color: #2E2B27;
+    font-family: var(--font-body), sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  button,
+  a,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+
+  button,
+  a {
+    touch-action: manipulation;
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading), serif;
+  }
+
+  .camera-mirror {
+    transform: scaleX(-1);
+  }
+
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .glass-clay {
+    background: color-mix(in srgb, #fffaf1 76%, transparent);
+    border: 1px solid color-mix(in srgb, #EAE4D7 88%, transparent);
+    box-shadow: 0 18px 60px rgb(46 43 39 / 0.18);
+    backdrop-filter: blur(18px);
+  }
+}

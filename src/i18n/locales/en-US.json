@@ -1,0 +1,155 @@
+{
+  "common": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "loading": "Loading…",
+    "on": "On",
+    "off": "Off",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "delete": "Delete",
+    "userId": "User ID"
+  },
+  "language": {
+    "label": "Language",
+    "triggerLabel": "Language: {{language}}",
+    "followSystem": "System",
+    "followSystemWithLanguage": "System ({{language}})",
+    "enUS": "English",
+    "zhCN": "中文"
+  },
+  "errors": {
+    "notFound": {
+      "code": "404",
+      "title": "Page not found",
+      "description": "This studio surface does not exist yet.",
+      "action": "Back to workspace"
+    },
+    "generic": {
+      "title": "Something went wrong",
+      "description": "Refresh the studio and try again.",
+      "action": "Try again"
+    }
+  },
+  "spatial": {
+    "locale": {
+      "systemShort": "Auto"
+    },
+    "status": {
+      "noHand": "No hand",
+      "handDetected": "Hand detected",
+      "pinched": "Pinched fingers - Draw",
+      "moving": "Moving"
+    },
+    "statusDetail": {
+      "noHand": "Bring one hand into frame",
+      "handDetected": "Ready for pinch or fist",
+      "pinched": "Moving continuously",
+      "moving": "Shape is being repositioned"
+    },
+    "workspace": {
+      "title": "Spatial Canvas",
+      "version": "v1.0.0",
+      "badge": "Calm Creative Studio",
+      "description": "A quiet space for physical creation in virtual air. Control your canvas naturally using modern hand-tracking camera interactions.",
+      "guideHeading": "Active Gesture Protocol",
+      "guideLabel": "Guide",
+      "settingsHeading": "Workspace Settings",
+      "acoustic": "Acoustic feedback",
+      "fidelity": "Tracking fidelity",
+      "fidelityValue": "High (30fps)",
+      "local": "Local Browser Sandbox",
+      "calibrate": "Calibrate Stream",
+      "cameraLabel": "Front camera stream",
+      "openGuide": "Open onboarding guide",
+      "canvasLabel": "Spatial drawing canvas overlay",
+      "calibrationMini": "Tracking confidence {{confidence}}%",
+      "shapeCount": "{{count}} shape",
+      "shapeCount_plural": "{{count}} shapes",
+      "pickColor": "Pick stroke color",
+      "cycle": "Cycle",
+      "settings": "Settings",
+      "undo": "Undo",
+      "clear": "Clear"
+    },
+    "steps": {
+      "pinch": { "title": "Pinch & Hold", "desc": "Draw thick ink trails continuously" },
+      "release": { "title": "Release Pinch", "desc": "Drop ink to commit spatial shape" },
+      "fist": { "title": "Make Fist & Slide", "desc": "Grab and reposition static shapes" }
+    },
+    "camera": {
+      "idle": { "title": "Start the camera canvas", "desc": "Grant front-camera access to mirror your hand and begin drawing in the air." },
+      "loading": { "title": "Preparing hand tracking", "desc": "Loading the camera and browser hand-landmark model." },
+      "denied": { "title": "Camera permission is blocked", "desc": "Allow camera access in the browser, then return here to start the studio." },
+      "unsupported": { "title": "Camera is not supported", "desc": "This browser does not expose camera access. Try a modern mobile or desktop browser." },
+      "error": { "title": "Camera could not start", "desc": "Close other apps using the camera, then try again." },
+      "ready": { "title": "Camera ready", "desc": "Your hand-tracking canvas is active." },
+      "start": "Start camera",
+      "loadingAction": "Starting…"
+    },
+    "calibration": {
+      "guidance": {
+        "noHand": "No hand in frame yet.",
+        "ready": "Distance looks ideal.",
+        "close": "Move your hand back slightly.",
+        "far": "Move your hand closer to the camera."
+      }
+    },
+    "onboarding": {
+      "badge": "Spatial Gesture Canvas",
+      "close": "Close Guide",
+      "title": "Welcome to your calm creative studio.",
+      "description": "Using your front-facing camera or standard computer webcam, paint and manipulate objects organically in 2D spatial coordinates. No gloves, controllers, or setups required.",
+      "how": "How to interact",
+      "draw": { "title": "Draw Stroke", "desc": "Pinch your thumb and index finger together to paint fine spatial lines." },
+      "grab": { "title": "Grab & Drag", "desc": "Make a fist next to any static stroke to pick up and move it elsewhere." },
+      "release": { "title": "Release Shape", "desc": "Open your hand fully to place the shape firmly on your canvas." },
+      "noAccount": "No account setup required.",
+      "enter": "Enter Studio Space"
+    },
+    "settings": {
+      "back": "Back to Canvas",
+      "title": "Studio Settings",
+      "smoothingGroup": "Tension & Smoothing",
+      "smoothingDesc": "Reduces hand jittering via weighted exponential moving average filtering.",
+      "smoothingLabel": "Landmark Smoothing",
+      "smoothingValue": "{{value}}% (High)",
+      "soundGroup": "Auditory Feedback Soundboard",
+      "soundLabel": "Haptic Synthesis Sounds",
+      "soundDesc": "Play soft clay scraping sounds when drawing paths.",
+      "deadzoneGroup": "Gestural Deadzones",
+      "deadzoneDesc": "Pinch detection proximity margin in camera-view pixels.",
+      "pinchLabel": "Pinch Distance Sensitivity",
+      "pinchValue": "{{value}}px",
+      "grabGroup": "Object Grab Radius",
+      "grabDesc": "How close a fist must be to an existing shape before it can move it.",
+      "grabLabel": "Fist Grab Proximity",
+      "grabValue": "{{value}}px",
+      "footer": "Spatial Gesture Canvas — Built with local machine learning front-end models."
+    },
+    "calibrationScreen": {
+      "back": "Back to Canvas",
+      "title": "Camera Calibration",
+      "canvasLabel": "Camera calibration canvas overlay",
+      "guide": "Align hand inside center target",
+      "properties": "Calibration Properties",
+      "gain": "Contrast Gain",
+      "light": "Ambient Light",
+      "lightValue": {
+        "low": "Low",
+        "balanced": "Optimized",
+        "bright": "Bright"
+      },
+      "distance": "Hand Distance",
+      "distanceValue": {
+        "close": "Close",
+        "ideal": "Ideal",
+        "far": "Far"
+      },
+      "confidence": "Confidence",
+      "confirm": "Confirm Calibration Settings"
+    }
+  }
+}
